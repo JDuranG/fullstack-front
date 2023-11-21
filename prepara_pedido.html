@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizzas Full Stack</title>
+	<link href="css/estilos.css" type="text/css" rel="stylesheet">
+	<script src="jquery/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+	<div class="cabecera">
+		<img src="images/pizza_logo.jpg" alt="Pizza Logo">
+		<h1>Pizzas Full Stack</h1>
+	</div>
+	<form  id="pedidoForm"  action="http://localhost:5000/pizza" method="post">
+		<div  class="form_pedido">
+			<div class="client" >
+				<h2>Datos del cliente</h2>
+				<div class="form_client">
+					<div>
+						<label id="labelName" class="form_label" for="fname">Nombre del cliente:</label>
+						<input class="form_imput" type="text" id="fname" name="fname">
+					</div>
+					<div>
+						<label class="form_label" id="labelLast" for="lname">Apellidos del cliente:</label>
+						<input class="form_imput" type="text" id="lname" name="lname">
+					</div>
+					<div>
+						<label class="form_label" for="dbirthday">Fecha de nacimiento del cliente:</label>
+						<input class="form_imput" type="text" id="dbirthday" name="dbirthday">
+					</div>
+					<div>
+						<label class="form_label" for="phnumber" id="labelPhnumber">Número de telefono del cliente:</label>
+						<input class="form_imput" type="text" id="phnumber" name="phnumber">
+					</div>
+					<div >
+						<label class="form_label" for="address">Dirección postal del cliente:</label>
+						<textarea class="form_imput" id="address" name="address"></textarea>
+					</div>
+				</div>
+	
+			</div>
+			<div class="pedido">
+				
+					<h2>Datos del pedido</h2>
+				
+				<div >
+					<label class="form_label" for="size">Elige Tamaño:</label>
+					<select class="form_imput" id="size" name="size">
+						<option value="P">Pequeño</option>
+						<option value="M">Mediano</option>
+						<option value="G">Grande</option>
+					</select>
+				</div>
+				<div >
+					<label class="form_label" for="size">Ingredientes:</label>
+					<input class="form_imput" type="checkbox" id="ing1" name="ing1" value="Jamón York">
+					<label class="form_imput" for="ing1"> Jamón York</label>
+					<input class="form_imput" type="checkbox" id="ing2" name="ing2" value="Champiñones">
+					<label class="form_imput" for="ing2"> Champiñones</label>
+					<input class="form_imput" type="checkbox" id="ing3" name="ing3" value="Pepperoni">
+					<label class="form_imput" for="ing3"> Pepperoni</label>
+					<input class="form_imput"type="checkbox" id="ing4" name="ing4" value="Aceitunas">
+					<label for="ing4"> Aceitunas</label>
+				</div>
+				
+			</div>
+			<div>
+				<input type="submit" id="send" name="Enviar">
+			</div>
+		</div>
+		
+	</form>
+	
+<!-- <script src="js/script.js"></script> -->
+<script src="jquery/query_pedido.js"></script>
+</body>
+
+</html>
