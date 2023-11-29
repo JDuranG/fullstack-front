@@ -14,7 +14,7 @@
 		<img src="images/pizza_logo.jpg" alt="Pizza Logo">
 		<h1>Pizzas Full Stack</h1>
 	</div>
-	<form  id="pedidoForm"  action="http://localhost:5000/pizza" method="post">
+	<form  id="pedidoForm" action="http://localhost:5000/pizza" method="post">
 		<div  class="form_pedido">
 			<div class="client" >
 				<h2>Datos del cliente</h2>
@@ -49,11 +49,12 @@
 				<div >
 					<label class="form_label" for="size">Elige Tamaño:</label>
 					<select class="form_imput" id="size" name="size">
-						<option value="S">Pequeño</option>
-						<option value="M">Mediano</option>
-						<option value="XL">Grande</option>
 						<option value="XXL">XXL</option>
+						<option value="L">Grande</option>
+						<option value="M">Mediana</option>
+						<option value="S">Pequeña</option>
 					</select>
+					<span id="resultado_tamano"></span>
 				</div>
 				<div >
 					<label class="form_label" for="size">Ingredientes:</label>
